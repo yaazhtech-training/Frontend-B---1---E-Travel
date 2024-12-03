@@ -31,7 +31,7 @@ const Navbar = () => {
             <FaBook size={20} />
             <span>About</span>
           </a>
-          <a href="Home" className="flex items-center space-x-2 hover:text-gray-300">
+          <a href="/contact" className="flex items-center space-x-2 hover:text-gray-300">
             <BsPeopleFill size={20} />
             <span>Contact</span>
           </a>

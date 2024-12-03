@@ -15,6 +15,7 @@ import Destination from './components/Destination';
 
 
 
+
 function App() {
   return (
     <div className="App">
@@ -30,6 +31,7 @@ function App() {
      <Route path='/contact'element={<Contact/>}/>
      <Route path='/about'element={<About/>}/>
      <Route path='/package'element={<Packages/>}/>
+    
      
     
     

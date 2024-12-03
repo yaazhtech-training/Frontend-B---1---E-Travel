@@ -15,16 +15,16 @@ const Destination = () => {
   return (
   <div>
    <div className="bg-cover bg-bottom h-[70vh] bg-[url('../src/components/Assetes/destine.png')]">
-   <div className=''>us
+   <div className=''>
    <h1 className='text-6xl font-bold text-white font-serif p-10 pt-48 ' >Destinations </h1>
    </div>
     </div>
      <div className='items-center flex  '> 
-     <h1 className=' text-4xl font-semibold p-5  '> All Destination 
+     <h1 className=' text-4xl font-semibold p-5 '> All Destination 
      </h1>
      <h1>
      <IoIosArrowDown  size={40}/>
-     </h1>
+     </h1>  
      </div>
     <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 p-4 text-center">
     {[
