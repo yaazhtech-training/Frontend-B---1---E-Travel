@@ -10,6 +10,7 @@ import About from './components/About';
 import Packages from './components/Packages';
 import Packagepage from './components/Packagepage';
 import Destination from './components/Destination';
+import MaldivesPackage from './components/Packages/MaldivesPackage';
 
 
 
@@ -31,7 +32,7 @@ function App() {
      <Route path='/contact'element={<Contact/>}/>
      <Route path='/about'element={<About/>}/>
      <Route path='/package'element={<Packages/>}/>
-    
+     <Route path='/maldives'element={<MaldivesPackage/>}/>
      
     
     
