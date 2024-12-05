@@ -30,7 +30,7 @@ Because the world is too beautiful to stay in one place. 🌟
             Read More
           </button>
           <button className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">
-            Contact Us
+            Contact Us 
           </button>
         </div>
       </div>
