@@ -1,37 +1,59 @@
 import React from "react";
 
 import video from '../Assetes/Maldives 30 Seconds Aerial Overview Video.mp4'
+//day 1
+import malday1pl1 from './maldivesAssetes/malday1.jpg'
+import malday2 from './maldivesAssetes/malday2.jpg'
+import malday3 from './maldivesAssetes/malday3.webp'
+
+
+
+
 
 const MaldivesPackage = () => {
   const itinerary = [
     {
       day: "Day 1",
-      details: "Arrival in Malé, Speedboat transfer to the resort, Welcome drinks and leisure time to relax at the beach.",
-      image: "/Assetes/maldives.jpg", // Replace with your image path
+      details: 'Arrival in Malé',
+      details1: ' Speedboat transfer to the resort,',
+      details2: ' Welcome drinks and leisure time to relax at the beach.',
+      image: malday1pl1,
+      
     },
     {
       day: "Day 2",
-      details: "Snorkeling trip to coral reefs, Scuba diving (optional), Evening beach dinner with live music.",
-      image: "/images/day2.jpg",
+      details: 'Snorkeling trip to coral reefs,',
+      details1: ' Scuba diving (optional),,',
+      details2: '  Evening beach dinner with live music',
+      image: malday2,
     },
     {
       day: "Day 3",
-      details: "Visit nearby islands like Maafushi, Traditional Maldivian lunch, Night stay at a luxury beach villa.",
-      image: "/images/day3.jpg",
+      details: 'Visit nearby islands like Maafushi',
+      details1: 'Traditional Maldivian lunch,,',
+      details2: ' Night stay at a luxury beach villa',
+      image:malday3,
+      
     },
     {
       day: "Day 4",
-      details: "Private spa treatments, Swim in infinity pools, Sunset cruise with complimentary drinks.",
+      details: 'Private spa treatments,',
+      details1: ' Swim in infinity pools,',
+      details2: ' Sunset cruise with complimentary drinks..',
       image: "/images/day4.jpg",
     },
     {
       day: "Day 5",
-      details: "Morning dolphin safari, Jet skiing, parasailing, and windsurfing, Special candlelight dinner at the villa.",
+      details: ' Morning dolphin safari',
+      details1: ' Jet skiing, parasailing, and windsurfing, ',
+      details2: ' Special candlelight dinner at the villa.',
       image: "/images/day5.jpg",
     },
     {
       day: "Day 6",
-      details: "Farewell breakfast, Transfer to the airport by speedboat.",
+      details: 'Farewell breakfast',
+      details1: ' Transfer to the airport by speedboat',
+      details2: 'Thanks for traveling with us!',
       image: "/images/day6.jpg",
     },
   ];
@@ -49,60 +71,64 @@ const MaldivesPackage = () => {
   ];
 
   return (
-  
-      <div className="p-6 bg-gradient-to-b from-blue-100 to-white text-gray-800">
+
+    <div className="p-6 bg-gradient-to-b from-blue-100 to-white text-gray-800">
       {/* Header Section */}
       <div className="relative text-gray-800">
-  {/* YouTube Background */}
-  <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        src={video}
-        autoPlay
-        loop
-        muted
-        playsInline
-      />
-  {/* Overlay Content */}
-  <div className="relative p-10 bg-black bg-opacity-50 text-white">
-    {/* Header Section */}
-    <div className="text-center mb-10">
-      <h1 className="text-4xl font-bold text-blue-200">Maldives Travel Package</h1>
-      <p className="text-lg mt-4">Discover luxury and adventure in paradise.</p>
-    </div>
+        {/* YouTube Background */}
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          src={video}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+        {/* Overlay Content */}
+        <div className="relative p-10 bg-black bg-opacity-50 text-white">
+          {/* Header Section */}
+          <div className="text-center mb-10">
+            <h1 className="text-4xl font-bold text-blue-200">Maldives Travel Package</h1>
+            <p className="text-lg mt-4">Discover luxury and adventure in paradise.</p>
+          </div>
 
-    {/* Highlights Section */}
-    <section className="p-8 flex flex-col items-center text-center">
-      <h2 className="text-2xl font-semibold mb-4">Highlights</h2>
-      <ul className="list-disc pl-5 space-y-2 text-left">
-        <li>Duration: 5 Nights / 6 Days</li>
-        <li>Destinations: Malé, Maafushi, Meeru Island</li>
-        <li>Type: Luxury, Adventure, Honeymoon, Family</li>
-      </ul>
-    </section>
-  </div>
-</div>
+          {/* Highlights Section */}
+          <section className="p-8 flex flex-col items-center text-center">
+            <h2 className="text-4xl font-semibold mb-4">Highlights</h2>
+            <ul className="list-disc pl-5 space-y-2 text-xl text-left">
+              <li>Duration: 5 Nights / 6 Days</li>
+              <li>Destinations: Malé, Maafushi, Meeru Island</li>
+              <li>Type: Luxury, Adventure, Honeymoon, Family</li>
+            </ul>
+          </section>
+        </div>
+      </div>
 
 
-  
+
 
       {/* Itinerary Section */}
-      <div className="space-y-6">
+      <div className="space-y-6 justify-center">
         <h2 className="text-2xl font-bold text-blue-500">Itinerary</h2>
         {itinerary.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row items-center gap-6 bg-white shadow-md rounded-md p-4"
+            className="flex flex-col md:flex-row justify-center items-center gap-6 bg-white shadow-md rounded-md p-4 "
           >
-            <div className="md:w-2/3">
+            <div className="md:w-2/4 ">
               <h3 className="text-xl font-semibold text-blue-500">{item.day}</h3>
-              <p className="mt-2 text-gray-600">{item.details}</p>
+              <li className="mt-2 text-gray-600">{item.details}</li>
+              <li className="mt-2 text-gray-600">{item.details1}</li>
+              <li className="mt-2 text-gray-600">{item.details2}</li>
             </div>
-            <div className="md:w-1/3">
-              <img
-                src={item.image}
-                alt={`${item.day}`}
-                className="rounded-md w-full object-cover"
-              />
+            <div className="md:w-2/4 ">
+           
+                <img
+                  src={item.image}
+
+                  alt={`${item.day}`}
+                  className="rounded-md object-cover"
+                />
             </div>
           </div>
         ))}
