@@ -1,11 +1,15 @@
 import React from "react";
 
-import video from '../Assetes/Maldives 30 Seconds Aerial Overview Video.mp4'
-//day 1
+import video from '../video/maldives.mp4'
+//highlight
+import highlight from './maldivesAssetes/highlight.webp'
+//day 1 to 6
 import malday1pl1 from './maldivesAssetes/malday1.jpg'
 import malday2 from './maldivesAssetes/malday2.jpg'
 import malday3 from './maldivesAssetes/malday3.webp'
-
+import malday4 from './maldivesAssetes/malday4.jpg'
+import malday5 from './maldivesAssetes/malday5.jpg'
+import malday6 from './maldivesAssetes/malday6.jpg'
 
 
 
@@ -40,28 +44,28 @@ const MaldivesPackage = () => {
       details: 'Private spa treatments,',
       details1: ' Swim in infinity pools,',
       details2: ' Sunset cruise with complimentary drinks..',
-      image: "/images/day4.jpg",
+      image: malday4,
     },
     {
       day: "Day 5",
       details: ' Morning dolphin safari',
       details1: ' Jet skiing, parasailing, and windsurfing, ',
       details2: ' Special candlelight dinner at the villa.',
-      image: "/images/day5.jpg",
+      image: malday5 ,
     },
     {
       day: "Day 6",
       details: 'Farewell breakfast',
       details1: ' Transfer to the airport by speedboat',
       details2: 'Thanks for traveling with us!',
-      image: "/images/day6.jpg",
+      image: malday6,
     },
   ];
 
   const pricingDetails = [
-    { type: "Couple Package", price: "$4,000 for 5 nights" },
-    { type: "Family Package (4 pax)", price: "$6,500 for 5 nights" },
-    { type: "Solo Traveler", price: "$2,500 for 5 nights" },
+    { type: "Couple Package", price: "₹3,38,910 for 5 nights" },
+    { type: "Family Package (4 pax)", price: "₹5,50,696 for 5 nights" },
+    { type: "Solo Traveler", price: "₹2,11,807 for 5 nights" },
   ];
 
   const addOns = [
@@ -77,7 +81,7 @@ const MaldivesPackage = () => {
       <div className="relative text-gray-800">
         {/* YouTube Background */}
         <video
-          className="absolute top-0 left-0 w-full h-full object-cover"
+          className="absolute top-0 left-0 w-full h-[60vh] object-cover rounded-3xl"
           src={video}
           autoPlay
           loop
@@ -85,51 +89,55 @@ const MaldivesPackage = () => {
           playsInline
         />
         {/* Overlay Content */}
-        <div className="relative p-10 bg-black bg-opacity-50 text-white">
+        <div className="relative p-44 bg-black bg-opacity-10 text-white ">
           {/* Header Section */}
           <div className="text-center mb-10">
-            <h1 className="text-4xl font-bold text-blue-200">Maldives Travel Package</h1>
-            <p className="text-lg mt-4">Discover luxury and adventure in paradise.</p>
+            <h1 className="text-8xl font-bold text-blue-200">Maldives Travel Package</h1>
+            <p className="text-6xl mt-4">Discover luxury and adventure in paradise.</p>
+          </div>
           </div>
 
-          {/* Highlights Section */}
-          <section className="p-8 flex flex-col items-center text-center">
-            <h2 className="text-4xl font-semibold mb-4">Highlights</h2>
-            <ul className="list-disc pl-5 space-y-2 text-xl text-left">
-              <li>Duration: 5 Nights / 6 Days</li>
-              <li>Destinations: Malé, Maafushi, Meeru Island</li>
-              <li>Type: Luxury, Adventure, Honeymoon, Family</li>
-            </ul>
-          </section>
-        </div>
-      </div>
+          <section className="p-8 bg-gray-200 flex flex-col items-center text-center">
+  <h2 className="text-4xl font-semibold mb-4">Highlights</h2>
+  <ul className="list-disc pl-5 space-y-2 text-xl text-left">
+    <li>Duration: 5 Nights / 6 Days</li>
+    <li>Destinations: Malé, Maafushi, Meeru Island</li>
+    <li>Type: Luxury, Adventure, Honeymoon, Family</li>
+  </ul>
+  <img
+    className="w-[100vh] h-[50vh] mt-5 rounded-3xl shadow-lg"
+    src={highlight}
+    alt="Maldives Highlights"
+  />
+</section>
+</div>
 
 
 
 
       {/* Itinerary Section */}
       <div className="space-y-6 justify-center">
-        <h2 className="text-2xl font-bold text-blue-500">Itinerary</h2>
+        <h2 className="text-6xl font-bold text-blue-500">Itinerary</h2>
         {itinerary.map((item, index) => (
           <div
             key={index}
             className="flex flex-col md:flex-row justify-center items-center gap-6 bg-white shadow-md rounded-md p-4 "
           >
-            <div className="md:w-2/4 ">
-              <h3 className="text-xl font-semibold text-blue-500">{item.day}</h3>
-              <li className="mt-2 text-gray-600">{item.details}</li>
-              <li className="mt-2 text-gray-600">{item.details1}</li>
-              <li className="mt-2 text-gray-600">{item.details2}</li>
+            <div className="md:w-2/4  ">
+              <h3 className="text-4xl font-semibold text-blue-500">{item.day}</h3>
+              <li className="mt-2 text-2xl text-gray-600">{item.details}</li>
+              <li className="mt-2 text-2xl text-gray-600">{item.details1}</li>
+              <li className="mt-2 text-2xl text-gray-600">{item.details2}</li>
             </div>
-            <div className="md:w-2/4 ">
+            <div className="md:w-2/4  ">
            
                 <img
                   src={item.image}
 
                   alt={`${item.day}`}
-                  className="rounded-md object-cover"
+                  className="rounded-md object-cover w-full h-[40vh] "
                 />
-            </div>
+            </div> 
           </div>
         ))}
       </div>

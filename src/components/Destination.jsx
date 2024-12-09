@@ -38,7 +38,7 @@ const Destination = () => {
           image: paris,
           alt: "Paris",
           name: "Paris",
-          navigate: "/Childrens",
+          navigate: "/paris",
         },
         {
           image: switz,

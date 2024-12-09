@@ -11,6 +11,7 @@ import Packages from './components/Packages';
 import Packagepage from './components/Packagepage';
 import Destination from './components/Destination';
 import MaldivesPackage from './components/Packages/MaldivesPackage';
+import Paris from './components/Packages/Paris package/Paris';
 
 
 
@@ -32,9 +33,10 @@ function App() {
      <Route path='/contact'element={<Contact/>}/>
      <Route path='/about'element={<About/>}/>
      <Route path='/package'element={<Packages/>}/>
-     <Route path='/maldives'element={<MaldivesPackage/>}/>
-     
-    
+ {/*  package      */}
+ <Route path='/maldives'element={<MaldivesPackage/>}/>
+ <Route path='/paris'element={<Paris/>}/>
+
     
      </Routes>
      <Footer/> 
