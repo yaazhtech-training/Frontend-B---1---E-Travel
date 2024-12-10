@@ -1,8 +1,10 @@
 import React from "react";
 
-// import video from '../Assetes/Maldives 30 Seconds Aerial Overview Video.mp4'
-//day 1
-// import malday1pl1 from './maldivesAssetes/malday1.jpg'
+import video from './Assetes/paris.mp4'
+//highlight
+import highlight from './Assetes/paris.mp4'
+// //day 1 to 6
+import malday1pl1 from './Assetes/parisday1.webp'
 // import malday2 from './maldivesAssetes/malday2.jpg'
 // import malday3 from './maldivesAssetes/malday3.webp'
 // import malday4 from './maldivesAssetes/malday4.jpg'
@@ -12,51 +14,51 @@ import React from "react";
 
 
 
-const Paris  = () => {
+const Paris = () => {
   const itinerary = [
     {
       day: "Day 1",
-      details: 'Arrival in Malé',
-      details1: ' Speedboat transfer to the resort,',
-      details2: ' Welcome drinks and leisure time to relax at the beach.',
-    //   image: malday1pl1,
+      details: 'Arrival at Charles de Gaulle Airport',
+      details1: 'Private transfer to your hotel.',
+      details2: ' Evening Seine River cruise with welcome drinks.',
+      image: '',
       
     },
     {
       day: "Day 2",
-      details: 'Snorkeling trip to coral reefs,',
-      details1: ' Scuba diving (optional),,',
-      details2: '  Evening beach dinner with live music',
-    //   image: malday2,
+      details: 'Morning visit to the Eiffel Tower (priority access).',
+      details1: ' Explore the Champs-Élysées and Arc de Triomphe.',
+      details2: '  Evening stroll and dinner in Montmartre, with views of Sacré-Cœur.',
+      image: '',
     },
     {
       day: "Day 3",
-      details: 'Visit nearby islands like Maafushi',
-      details1: 'Traditional Maldivian lunch,,',
-      details2: ' Night stay at a luxury beach villa',
-    //   image:malday3,
+      details: 'Morning visit to the Louvre Museum.',
+      details1: 'Leisure time at the Tuileries Garden.',
+      details2: 'Afternoon at the Musée d Orsay for Impressionist masterpieces.',
+      image:'',
       
     },
     {
       day: "Day 4",
-      details: 'Private spa treatments,',
-      details1: ' Swim in infinity pools,',
-      details2: ' Sunset cruise with complimentary drinks..',
-    //   image: malday4,
+      details: 'Morning departure for the Palace of Versailles',
+      details1: ' Guided tour of the palace and gardens.',
+      details2: ' Return to Paris for a casual dinner in a local bistro.',
+      image: '',
     },
     {
       day: "Day 5",
-      details: ' Morning dolphin safari',
-      details1: ' Jet skiing, parasailing, and windsurfing, ',
-      details2: ' Special candlelight dinner at the villa.',
-    //   image: malday5 ,
+      details: ' Explore Île de la Cité: Notre-Dame Cathedral and Sainte-Chapelle.',
+      details1: 'Wander through the Latin Quarter and Le Marais neighborhoods., ',
+      details2: 'Special farewell dinner at a Michelin-starred restaurant.',
+      image: '' ,
     },
     {
       day: "Day 6",
-      details: 'Farewell breakfast',
-      details1: ' Transfer to the airport by speedboat',
+      details: 'Farewell breakfast at the hotel.',
+      details1: ' Private transfer to the airport.',
       details2: 'Thanks for traveling with us!',
-    //   image: malday6,
+      image: '',
     },
   ];
 
@@ -78,33 +80,37 @@ const Paris  = () => {
       {/* Header Section */}
       <div className="relative text-gray-800">
         {/* YouTube Background */}
-        {/* <video
-          className="absolute top-0 left-0 w-full h-full object-cover"
+        <video
+          className="absolute top-0 left-0 w-full h-[60vh] object-cover rounded-3xl"
           src={video}
           autoPlay
           loop
           muted
           playsInline
-        /> */}
+        />
         {/* Overlay Content */}
-        <div className="relative p-10 bg-black bg-opacity-50 text-white">
+        <div className="relative p-44 bg-black bg-opacity-10 text-white ">
           {/* Header Section */}
           <div className="text-center mb-10">
-            <h1 className="text-4xl font-bold text-blue-200">Paris Travel Package</h1>
-            <p className="text-lg mt-4">Discover luxury and adventure in paradise.</p>
+            <h1 className="text-8xl font-bold text-blue-200">Paris Travel Package</h1>
+            <p className="text-6xl mt-4">Discover luxury and adventure in paradise.</p>
           </div>
           </div>
 
-          {/* Highlights Section */}
-          <section className="p-8 flex flex-col items-center text-center">
-            <h2 className="text-4xl font-semibold mb-4">Highlights</h2>
-            <ul className="list-disc pl-5 space-y-2 text-xl text-left">
-              <li>Duration: 5 Nights / 6 Days</li>
-              <li>Destinations: Eiffel Tower, Louvre Museum, Montmartre, Versailles, Latin Quarter              </li>
-              <li>Type: Luxury, Adventure, Honeymoon, Family</li>
-            </ul>
-          </section>
-        </div>
+          <section className="p-8 bg-gray-200 flex flex-col items-center text-center">
+  <h2 className="text-4xl font-semibold mb-4">Highlights</h2>
+  <ul className="list-disc pl-5 space-y-2 text-xl text-left">
+    <li>Duration: 5 Nights / 6 Days</li>
+    <li>Destinations: Eiffel Tower, Louvre Museum, Montmartre, Versailles, Latin Quarter</li>
+    <li>Type: Luxury, Adventure, Honeymoon, Family</li>
+  </ul>
+  <img
+    className="w-[100vh] h-[50vh] mt-5 rounded-3xl shadow-lg"
+    src={highlight}
+    alt="Maldives Highlights"
+  />
+</section>
+</div>
 
 
 
@@ -124,12 +130,12 @@ const Paris  = () => {
               <li className="mt-2 text-2xl text-gray-600">{item.details2}</li>
             </div>
             <div className="md:w-2/4  ">
-{/*            
-                <img
+           
+                {/* <img
                   src={item.image}
 
                   alt={`${item.day}`}
-                  className="rounded-md object-cover w-[100vh] h-[50vh] "
+                  className="rounded-md object-cover w-full h-[40vh] "
                 /> */}
             </div> 
           </div>
@@ -182,4 +188,4 @@ const Paris  = () => {
   );
 };
 
-export default Paris;
+export default Paris  ;
