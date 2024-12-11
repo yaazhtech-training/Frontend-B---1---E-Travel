@@ -44,7 +44,7 @@ const Destination = () => {
           image: switz,
           alt: "SwitzerLand",
           name: "SwitzerLand",
-          navigate: "/Childrens",
+          navigate: "/switz",
         },
         {
           image: usa,

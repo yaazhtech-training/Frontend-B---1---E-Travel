@@ -12,6 +12,7 @@ import Packagepage from './components/Packagepage';
 import Destination from './components/Destination';
 import MaldivesPackage from './components/Packages/MaldivesPackage';
 import Paris from './components/Packages/Paris package/Paris';
+import Switzerland from './components/Packages/Switzerland/Switzerland';
 
 
 
@@ -36,6 +37,7 @@ function App() {
  {/*  package      */}
  <Route path='/maldives'element={<MaldivesPackage/>}/>
  <Route path='/paris'element={<Paris/>}/>
+ <Route path='/switz'element={<Switzerland/>}/>
 
     
      </Routes>
