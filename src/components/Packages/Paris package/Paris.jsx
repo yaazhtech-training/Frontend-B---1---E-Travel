@@ -2,14 +2,14 @@ import React from "react";
 
 import video from './Assetes/paris.mp4'
 //highlight
-import highlight from './Assetes/paris.mp4'
+import highlightparis from './Assetes/highlightparis.webp'
 // //day 1 to 6
-import malday1pl1 from './Assetes/parisday1.webp'
-// import malday2 from './maldivesAssetes/malday2.jpg'
-// import malday3 from './maldivesAssetes/malday3.webp'
-// import malday4 from './maldivesAssetes/malday4.jpg'
-// import malday5 from './maldivesAssetes/malday5.jpg'
-// import malday6 from './maldivesAssetes/malday6.jpg'
+import parisday1 from './Assetes/parisday1.jpg'
+import parisday2 from './Assetes/parisday2.jpg'
+import parisday3 from './Assetes/parisday3.jpg'
+import parisday4 from './Assetes/parisday4.jpg'
+import parisday5 from './Assetes/parisday5.webp'
+import parisday6 from './Assetes/parisday6.webp'
 
 
 
@@ -21,7 +21,7 @@ const Paris = () => {
       details: 'Arrival at Charles de Gaulle Airport',
       details1: 'Private transfer to your hotel.',
       details2: ' Evening Seine River cruise with welcome drinks.',
-      image: '',
+      image: parisday1,
       
     },
     {
@@ -29,14 +29,14 @@ const Paris = () => {
       details: 'Morning visit to the Eiffel Tower (priority access).',
       details1: ' Explore the Champs-Élysées and Arc de Triomphe.',
       details2: '  Evening stroll and dinner in Montmartre, with views of Sacré-Cœur.',
-      image: '',
+      image: parisday2,
     },
     {
       day: "Day 3",
       details: 'Morning visit to the Louvre Museum.',
       details1: 'Leisure time at the Tuileries Garden.',
       details2: 'Afternoon at the Musée d Orsay for Impressionist masterpieces.',
-      image:'',
+      image:parisday3,
       
     },
     {
@@ -44,21 +44,21 @@ const Paris = () => {
       details: 'Morning departure for the Palace of Versailles',
       details1: ' Guided tour of the palace and gardens.',
       details2: ' Return to Paris for a casual dinner in a local bistro.',
-      image: '',
+      image:parisday4,
     },
     {
       day: "Day 5",
       details: ' Explore Île de la Cité: Notre-Dame Cathedral and Sainte-Chapelle.',
       details1: 'Wander through the Latin Quarter and Le Marais neighborhoods., ',
       details2: 'Special farewell dinner at a Michelin-starred restaurant.',
-      image: '' ,
+      image: parisday5,
     },
     {
       day: "Day 6",
       details: 'Farewell breakfast at the hotel.',
       details1: ' Private transfer to the airport.',
       details2: 'Thanks for traveling with us!',
-      image: '',
+      image: parisday6,
     },
   ];
 
@@ -106,7 +106,7 @@ const Paris = () => {
   </ul>
   <img
     className="w-[100vh] h-[50vh] mt-5 rounded-3xl shadow-lg"
-    src={highlight}
+    src={highlightparis}
     alt="Maldives Highlights"
   />
 </section>
@@ -131,12 +131,12 @@ const Paris = () => {
             </div>
             <div className="md:w-2/4  ">
            
-                {/* <img
+                 <img
                   src={item.image}
 
                   alt={`${item.day}`}
                   className="rounded-md object-cover w-full h-[40vh] "
-                /> */}
+                /> 
             </div> 
           </div>
         ))}
