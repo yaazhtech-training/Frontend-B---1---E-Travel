@@ -1,17 +1,15 @@
 import React from "react";
 
-// import video from './Assetes/paris.mp4'
+import video from './switzerland.mp4'
 // //highlight
 // import highlightparis from './Assetes/highlightparis.webp'
 // // //day 1 to 6
-// import parisday1 from './Assetes/parisday1.jpg'
-// import parisday2 from './Assetes/parisday2.jpg'
-// import parisday3 from './Assetes/parisday3.jpg'
-// import parisday4 from './Assetes/parisday4.jpg'
-// import parisday5 from './Assetes/parisday5.webp'
-// import parisday6 from './Assetes/parisday6.webp'
-
-
+import switzday1 from './switzday1.jpg'
+import switzday2 from './switzday2.jpg'
+import switzday3 from './switzday3.jpg'
+import switzday4 from './switzday4.jpg'
+import switzday5 from './switzday5.jpg'
+import switzday6 from './switzday6.jpg'
 
 
 const Paris = () => {
@@ -21,7 +19,7 @@ const Paris = () => {
       details: 'Arrival in Zurich and Explore Morning:Arrive at Zurich Airport.Check into your hotel.',
       details1: 'Private transfer to your hotel.',
       details2: ' Evening Seine River cruise with welcome drinks.',
-      image:'',
+      image:switzday1,
       
     },
     {
@@ -29,14 +27,14 @@ const Paris = () => {
       details: 'Morning visit to the Eiffel Tower (priority access).',
       details1: ' Explore the Champs-Élysées and Arc de Triomphe.',
       details2: '  Evening stroll and dinner in Montmartre, with views of Sacré-Cœur.',
-      image: '',
+      image: switzday2,
     },
     {
       day: "Day 3",
       details: 'Morning visit to the Louvre Museum.',
       details1: 'Leisure time at the Tuileries Garden.',
       details2: 'Afternoon at the Musée d Orsay for Impressionist masterpieces.',
-      image:'',
+      image:switzday3
       
     },
     {
@@ -44,21 +42,21 @@ const Paris = () => {
       details: 'Morning departure for the Palace of Versailles',
       details1: ' Guided tour of the palace and gardens.',
       details2: ' Return to Paris for a casual dinner in a local bistro.',
-      image:'',
+      image:switzday4,
     },
     {
       day: "Day 5",
       details: ' Explore Île de la Cité: Notre-Dame Cathedral and Sainte-Chapelle.',
       details1: 'Wander through the Latin Quarter and Le Marais neighborhoods., ',
       details2: 'Special farewell dinner at a Michelin-starred restaurant.',
-      image: '',
+      image: switzday5,
     },
     {
       day: "Day 6",
-      details: 'Farewell breakfast at the hotel.',
+      details: 'Exploreing the iconic of switzland: the switzvalley.',
       details1: ' Private transfer to the airport.',
       details2: 'Thanks for traveling with us!',
-      image: '',
+      image:switzday6,
     },
   ];
 
@@ -80,14 +78,14 @@ const Paris = () => {
       {/* Header Section */}
       <div className="relative text-gray-800">
         {/* YouTube Background */}
-        {/* <video
+         <video
           className="absolute top-0 left-0 w-full h-[60vh] object-cover rounded-3xl"
           src={video}
           autoPlay
           loop
           muted
           playsInline
-        /> */}
+        /> 
         {/* Overlay Content */}
         <div className="relative p-44 bg-black bg-opacity-10 text-white ">
           {/* Header Section */}
@@ -108,7 +106,7 @@ const Paris = () => {
     className="w-[100vh] h-[50vh] mt-5 rounded-3xl shadow-lg"
     src={highlightparis}
     alt="Maldives Highlights"
-  /> */}
+  />  */}
 </section>
 </div>
 
@@ -131,12 +129,12 @@ const Paris = () => {
             </div>
             <div className="md:w-2/4  ">
            
-                 {/* <img
+                 <img
                   src={item.image}
 
                   alt={`${item.day}`}
                   className="rounded-md object-cover w-full h-[40vh] "
-                />  */}
+                />  
             </div> 
           </div>
         ))}
