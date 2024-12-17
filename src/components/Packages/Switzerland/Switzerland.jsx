@@ -2,7 +2,7 @@ import React from "react";
 
 import video from './switzerland.mp4'
 // //highlight
-// import highlightparis from './Assetes/highlightparis.webp'
+ import highlightparis from './SWITZERLAND HIGHLIGHT.webp'
 // // //day 1 to 6
 import switzday1 from './switzday1.jpg'
 import switzday2 from './switzday2.jpg'
@@ -12,50 +12,56 @@ import switzday5 from './switzday5.jpg'
 import switzday6 from './switzday6.jpg'
 
 
-const Paris = () => {
+const switzerland = () => {
   const itinerary = [
     {
-      day: "Day 1",
-      details: 'Arrival in Zurich and Explore Morning:Arrive at Zurich Airport.Check into your hotel.',
-      details1: 'Private transfer to your hotel.',
-      details2: ' Evening Seine River cruise with welcome drinks.',
+      day: "Day 1 ",
+      details: ' Arrival at Zurich International Airport.  ',
+      details1: ' Private transfer to your luxury hotel in central Zurich.  ',
+      details2: ' Explore Bahnhofstrasse, Zurich Old Town, and Lake Zurich.',
+      deatials3: 'Welcome dinner featuring authentic Swiss cuisine.',
       image:switzday1,
       
     },
     {
-      day: "Day 2",
-      details: 'Morning visit to the Eiffel Tower (priority access).',
-      details1: ' Explore the Champs-Élysées and Arc de Triomphe.',
-      details2: '  Evening stroll and dinner in Montmartre, with views of Sacré-Cœur.',
+      day: "Day 2: Lucerne & Mount Pilatus Adventure**  ",
+      details: ' Day excursion to Lucerne, a city with medieval charm.',
+      details1: ' Visit iconic landmarks like Chapel Bridge and the Lion Monument',
+      details2: ' Cable car ride to Mount Pilatus for panoramic views and optional hiking.',
+      deatials3: ' Return to Zurich for an evening at leisure.',
       image: switzday2,
     },
     {
-      day: "Day 3",
-      details: 'Morning visit to the Louvre Museum.',
-      details1: 'Leisure time at the Tuileries Garden.',
-      details2: 'Afternoon at the Musée d Orsay for Impressionist masterpieces.',
+      day: "Day 3 : Interlaken & Jungfraujoch**",
+      details: 'Transfer to Interlaken, located between Lakes Thun and Brienz.  .',
+      details1: 'Excursion to Jungfraujoch via Europe’s highest railway: “Top of Europe”..',
+      details2: 'Enjoy glaciers, snowfields, and activities like snow sports or the Ice Palace. ',
+      deatials3: 'Evening check-in at a luxury hotel or chalet in Interlaken.',
       image:switzday3
       
     },
     {
       day: "Day 4",
-      details: 'Morning departure for the Palace of Versailles',
-      details1: ' Guided tour of the palace and gardens.',
-      details2: ' Return to Paris for a casual dinner in a local bistro.',
+      details: 'Explore the car-free village and admire the iconic Matterhorn peak.lles',
+      details1: 'Take the Gornergrat Railway for stunning mountain views.Explore hiking trails or relax in the alpine scenery.',
+      details2: ' Stay overnight in Zermatt or head to Montreux.',
+      deatials3: '  Overnight stay in Zermatt.',
       image:switzday4,
     },
     {
-      day: "Day 5",
-      details: ' Explore Île de la Cité: Notre-Dame Cathedral and Sainte-Chapelle.',
-      details1: 'Wander through the Latin Quarter and Le Marais neighborhoods., ',
+      day: "Day 5: Montreux & Lake Geneva**   ",
+      details: ' Transfer to Montreux, a beautiful town on Lake Geneva’s shores. ',
+      details1: ' Visit the iconic Chillon Castle. , ',
       details2: 'Special farewell dinner at a Michelin-starred restaurant.',
+      deatials3:  ' Evening transfer to Geneva for a luxurious overnight stay.',
       image: switzday5,
     },
     {
       day: "Day 6",
-      details: 'Exploreing the iconic of switzland: the switzvalley.',
-      details1: ' Private transfer to the airport.',
-      details2: 'Thanks for traveling with us!',
+      details: 'Morning city tour of Geneva, visiting Jet d’Eau, St. Pierre Cathedral, and the UN Headquarters.',
+      details1: '  Time for shopping (Swiss watches, chocolates, and souvenirs).  ',
+      details2: ' Private transfer to Geneva Airport for your departure.',
+      deatials3: 'Thanks for traveling with us!',
       image:switzday6,
     },
   ];
@@ -99,14 +105,14 @@ const Paris = () => {
   <h2 className="text-4xl font-semibold mb-4">Highlights</h2>
   <ul className="list-disc pl-5 space-y-2 text-xl text-left">
     <li>Duration: 5 Nights / 6 Days</li>
-    <li>Destinations: Eiffel Tower, Louvre Museum, Montmartre, Versailles, Latin Quarter</li>
+    <li>Destinations: Zurich, Lucerne, Mount Pilatus, Interlaken, Jungfraujoch, Zermatt, Matterhorn, Montreux, Lake Geneva</li>
     <li>Type: Luxury, Adventure, Honeymoon, Family</li>
   </ul>
-  {/* <img
+   <img
     className="w-[100vh] h-[50vh] mt-5 rounded-3xl shadow-lg"
     src={highlightparis}
     alt="Maldives Highlights"
-  />  */}
+  /> 
 </section>
 </div>
 
@@ -126,6 +132,7 @@ const Paris = () => {
               <li className="mt-2 text-2xl text-gray-600">{item.details}</li>
               <li className="mt-2 text-2xl text-gray-600">{item.details1}</li>
               <li className="mt-2 text-2xl text-gray-600">{item.details2}</li>
+              <li className="mt-2 text-2xl text-gray-600">{item.deatials3}</li>
             </div>
             <div className="md:w-2/4  ">
            
@@ -186,4 +193,4 @@ const Paris = () => {
   );
 };
 
-export default Paris  ;
+export default switzerland;

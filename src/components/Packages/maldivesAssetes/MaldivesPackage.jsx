@@ -1,14 +1,14 @@
 
-import video from '../video/maldives.mp4'
+import video from './maldives.mp4'
 //highlight
-import highlight from './maldivesAssetes/highlight.webp'
+import highlight from './highlight.webp'
 //day 1 to 6
-import malday1pl1 from './maldivesAssetes/malday1.jpg'
-import malday2 from './maldivesAssetes/malday2.jpg'
-import malday3 from './maldivesAssetes/malday3.webp'
-import malday4 from './maldivesAssetes/malday4.jpg'
-import malday5 from './maldivesAssetes/malday5.jpg'
-import malday6 from './maldivesAssetes/malday6.jpg'
+import malday1pl1 from './malday1.jpg'
+import malday2 from './malday2.jpg'
+import malday3 from './malday3.webp'
+import malday4 from './malday4.jpg'
+import malday5 from './malday5.jpg'
+import malday6 from './malday6.jpg'
 
 
 
