@@ -10,6 +10,7 @@ import parisday3 from './Assetes/parisday3.jpg'
 import parisday4 from './Assetes/parisday4.jpg'
 import parisday5 from './Assetes/parisday5.webp'
 import parisday6 from './Assetes/parisday6.webp'
+import { Link } from "react-router-dom";
 
 
 
@@ -154,9 +155,10 @@ const Paris = () => {
               <p className="text-gray-600">
                 <span className="font-semibold">{item.type}:</span> {item.price}
               </p>
+              <Link to='/booking' > 
               <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
                 Book Now
-              </button>
+              </button></Link>
             </div>
           ))}
         </div>

@@ -24,13 +24,13 @@ const Footer = () => {
           <h3 className="text-2xl font-bold mb-4">More Detials</h3>
           <ul className="text-black space-y-2">
             <li>
-              <a href="#home" className="hover:text-blue-800"> Home </a>
+              <a href="/home" className="hover:text-blue-800"> Home </a>
             </li>
             <li>
-              <a href="#home" className="hover:text-blue-800"> About </a>
+              <a href="/about" className="hover:text-blue-800"> About </a>
             </li>
             <li>
-              <a href="#home" className="hover:text-blue-800"> Contact </a>
+              <a href="/contact" className="hover:text-blue-800"> Contact </a>
             </li>
             
           </ul>

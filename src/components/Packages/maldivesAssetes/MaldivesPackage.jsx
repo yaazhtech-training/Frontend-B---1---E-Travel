@@ -9,6 +9,7 @@ import malday3 from './malday3.webp'
 import malday4 from './malday4.jpg'
 import malday5 from './malday5.jpg'
 import malday6 from './malday6.jpg'
+import { Link } from 'react-router-dom'
 
 
 
@@ -153,9 +154,14 @@ const MaldivesPackage = () => {
               <p className="text-gray-600">
                 <span className="font-semibold">{item.type}:</span> {item.price}
               </p>
-              <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+             <Link to='/booking'
+             state={{
+              product:item,
+             }}>
+             <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
                 Book Now
               </button>
+             </Link>
             </div>
           ))}
         </div>

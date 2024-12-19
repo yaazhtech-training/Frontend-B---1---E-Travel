@@ -56,7 +56,7 @@ const Destination = () => {
           image: india,
           alt: "India",
           name: "India",
-          navigate: "/Childrens",
+          navigate: "/india",
         },
         {
           image: japan ,

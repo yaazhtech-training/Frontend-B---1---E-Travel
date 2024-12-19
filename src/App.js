@@ -14,6 +14,9 @@ import MaldivesPackage from './components/Packages/maldivesAssetes/MaldivesPacka
 import Paris from './components/Packages/Paris package/Paris';
 import Switzerland from './components/Packages/Switzerland/Switzerland';
 import USA from './components/Packages/USA/USA';
+import BookNow from './components/BookNow';
+import Packagebooking from './components/PackageBooking';
+import India from './components/Packages/India/India';
 
 
 
@@ -37,11 +40,16 @@ function App() {
      <Route path='/contact'element={<Contact/>}/>
      <Route path='/about'element={<About/>}/>
      <Route path='/package'element={<Packages/>}/>
+     <Route path='/booknow'element={<BookNow/>}/>
+     <Route path='/booking'element={<Packagebooking/>}/>
+
  {/*  package      */}
  <Route path='/maldives'element={<MaldivesPackage/>}/>
  <Route path='/paris'element={<Paris/>}/>
  <Route path='/switz'element={<Switzerland/>}/>
  <Route path='/usa'element={<USA/>}/>
+ <Route path='/india'element={<India/>}/>
+
     
      </Routes>
      <Footer/> 
