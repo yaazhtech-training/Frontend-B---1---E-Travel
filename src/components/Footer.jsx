@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     
    
-    <footer className="bg-white text-black py-10 px-5 md:px-10 lg:px-20 font-bolt ">
+    <footer className="bg-white text-black py-10 px-5 md:px-10 lg:px-20 font-bolt">
        
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10">
         <div>

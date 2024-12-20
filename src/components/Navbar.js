@@ -3,7 +3,6 @@
 
 
 import React, { useState } from "react";
-import { MdOutlineTravelExplore } from "react-icons/md";
 import { FaHome } from "react-icons/fa";
 import { FaBook } from "react-icons/fa6";
 import { BiSolidPlaneAlt } from "react-icons/bi";
@@ -17,7 +16,7 @@ const Navbar = () => {
       <div className="container mx-auto flex flex-wrap items-center justify-between p-5">
         {/* Logo Section */}
         <div className="flex items-center text-white">
-          <MdOutlineTravelExplore size={50} />
+         
           <h1 className="font-semibold text-2xl ml-2">Travel App</h1>
         </div>
 
@@ -64,7 +63,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <nav className="lg:hidden bg-black bg-opacity-75 text-white p-5 space-y-4">
-          <a href="Home" className=" flex items-center space-x-2 hover:text-gray-300">
+          <a href="/home" className=" flex items-center space-x-2 hover:text-gray-300">
             <FaHome size={20} />
             <span>Home</span>
           </a>
@@ -72,7 +71,7 @@ const Navbar = () => {
             <FaBook size={20} />
             <span>About</span>
           </a>
-          <a href="Home" className=" flex items-center space-x-2 hover:text-gray-300">
+          <a href="/contact" className=" flex items-center space-x-2 hover:text-gray-300">
             <BsPeopleFill size={20} />
             <span>Contact</span>
           </a>
