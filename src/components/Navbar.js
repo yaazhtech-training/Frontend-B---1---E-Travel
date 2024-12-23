@@ -1,7 +1,3 @@
-
-
-
-
 import React, { useState } from "react";
 import { FaHome } from "react-icons/fa";
 import { FaBook } from "react-icons/fa6";
@@ -12,16 +8,16 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-black bg-opacity-50">
+    <header className=" bg-gray-100  " >
       <div className="container mx-auto flex flex-wrap items-center justify-between p-5">
         {/* Logo Section */}
-        <div className="flex items-center text-white">
+        <div className="flex items-center text-black">
          
           <h1 className="font-semibold text-2xl ml-2">Travel App</h1>
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex space-x-8 font-semibold text-white">
+        <nav className="hidden lg:flex space-x-8 font-semibold text-black">
           <a href="Home" className="flex items-center space-x-2 hover:text-gray-300">
             <FaHome size={20} />
             <span>Home</span>
