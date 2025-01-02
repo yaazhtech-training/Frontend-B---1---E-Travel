@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const BookingPage = () => {
   const [shipping, setShipping] = useState(0);
@@ -171,12 +171,13 @@ const BookingPage = () => {
         </div>
 
         <div className="text-center mt-10">
+          < Link to='/success'>
           <button
             className="bg-orange-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-orange-700"
-            disabled={!size}
           >
             Confirm Package
           </button>
+          </Link>
         </div>
       </div>
     </div>
@@ -184,163 +185,6 @@ const BookingPage = () => {
 };
 
 export default BookingPage;
-
-
-
-// import React, { useState } from 'react';
-
-// const TravelBookingForm = () => {
-//   const [formData, setFormData] = useState({
-//     from: '',
-//     to: '',
-//     departDate: '',
-//     returnDate: '',
-//     passengers: 1,
-//     travelClass: 'Economy',
-//   });
-
-//   const handleChange = (e) => {
-//     const { name, value } = e.target;
-//     setFormData({
-//       ...formData,
-//       [name]: value,
-//     });
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     console.log('Form Submitted:', formData);
-//     // Add your API call or navigation logic here
-//   };
-
-//   return (
-//     <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-//       <form
-//         onSubmit={handleSubmit}
-//         className="bg-white p-6 rounded-lg shadow-md max-w-md w-full"
-//       >
-//         <h2 className="text-2xl font-bold text-center mb-6">Book Your Travel</h2>
-
-//         {/* From */}
-//         <div className="mb-4">
-//           <label htmlFor="from" className="block text-gray-700 font-medium mb-2">
-//             From
-//           </label>
-//           <input
-//             type="text"
-//             id="from"
-//             name="from"
-//             placeholder="Enter departure city"
-//             className="w-full border-gray-300 rounded-lg p-2"
-//             value={formData.from}
-//             onChange={handleChange}
-//           />
-//         </div>
-
-//         {/* To */}
-//         <div className="mb-4">
-//           <label htmlFor="to" className="block text-gray-700 font-medium mb-2">
-//             To
-//           </label>
-//           <input
-//             type="text"
-//             id="to"
-//             name="to"
-//             placeholder="Enter destination city"
-//             className="w-full border-gray-300 rounded-lg p-2"
-//             value={formData.to}
-//             onChange={handleChange}
-//           />
-//         </div>
-
-//         {/* Depart Date */}
-//         <div className="mb-4">
-//           <label
-//             htmlFor="departDate"
-//             className="block text-gray-700 font-medium mb-2"
-//           >
-//             Depart Date
-//           </label>
-//           <input
-//             type="date"
-//             id="departDate"
-//             name="departDate"
-//             className="w-full border-gray-300 rounded-lg p-2"
-//             value={formData.departDate}
-//             onChange={handleChange}
-//           />
-//         </div>
-
-//         {/* Return Date */}
-//         <div className="mb-4">
-//           <label
-//             htmlFor="returnDate"
-//             className="block text-gray-700 font-medium mb-2"
-//           >
-//             Return Date
-//           </label>
-//           <input
-//             type="date"
-//             id="returnDate"
-//             name="returnDate"
-//             className="w-full border-gray-300 rounded-lg p-2"
-//             value={formData.returnDate}
-//             onChange={handleChange}
-//           />
-//         </div>
-
-//         {/* Passengers */}
-//         <div className="mb-4">
-//           <label
-//             htmlFor="passengers"
-//             className="block text-gray-700 font-medium mb-2"
-//           >
-//             Passengers
-//           </label>
-//           <input
-//             type="number"
-//             id="passengers"
-//             name="passengers"
-//             min="1"
-//             className="w-full border-gray-300 rounded-lg p-2"
-//             value={formData.passengers}
-//             onChange={handleChange}
-//           />
-//         </div>
-
-//         {/* Travel Class */}
-//         <div className="mb-4">
-//           <label
-//             htmlFor="travelClass"
-//             className="block text-gray-700 font-medium mb-2"
-//           >
-//             Travel Class
-//           </label>
-//           <select
-//             id="travelClass"
-//             name="travelClass"
-//             className="w-full border-gray-300 rounded-lg p-2"
-//             value={formData.travelClass}
-//             onChange={handleChange}
-//           >
-//             <option value="Economy">Economy</option>
-//             <option value="Business">Business</option>
-//             <option value="First Class">First Class</option>
-//           </select>
-//         </div>
-
-//         <button
-//           type="submit"
-//           className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600"
-//         >
-//           Search Flights
-//         </button>
-//       </form>
-//     </div>
-//   );
-// };
-
-// export default TravelBookingForm;
 
 
 

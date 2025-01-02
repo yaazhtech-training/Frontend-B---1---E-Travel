@@ -10,6 +10,7 @@ import switzday3 from './switzday3.jpg'
 import switzday4 from './switzday4.jpg'
 import switzday5 from './switzday5.jpg'
 import switzday6 from './switzday6.jpg'
+import { Link } from "react-router-dom";
 
 
 const switzerland = () => {
@@ -159,9 +160,14 @@ const switzerland = () => {
               <p className="text-gray-600">
                 <span className="font-semibold">{item.type}:</span> {item.price}
               </p>
-              <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+              <Link to='/booking'
+             state={{
+              product:item,
+             }}>
+             <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
                 Book Now
               </button>
+             </Link>
             </div>
           ))}
         </div>

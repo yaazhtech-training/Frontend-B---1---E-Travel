@@ -63,11 +63,11 @@ const Home = () => {
       />
 
       {/* Overlay and Content */}
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-4 text-white">
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 text-white ">
         <h1 className="text-4xl md:text-6xl font-bold mb-4  font-serif bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
           Ready To Explore Your Dream Destination
         </h1>
-        <p className="mb-6 text-lg md:text-2xl lg:text-3xl font-serif   bg-gradient-to-r from-pink-400 via-blue-500  to-purple-500 bg-clip-text text-transparent">
+        <p className="mb-6 text-lg md:text-2xl lg:text-3xl font-serif   bg-gradient-to-r from-red-400 via-blue-500  to-pink-400 bg-clip-text text-transparent">
           Pack Your Bags and Start Your Journey Today! Because the world is too
           beautiful to stay in one place. 🌟
         </p>

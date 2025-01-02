@@ -7,7 +7,6 @@ import Home from './components/Home';
  import Footer from './components/Footer';
 import Contact from './components/Contact';
 import About from './components/About';
-import Packages from './components/Packages';
 import Packagepage from './components/Packagepage';
 import Destination from './components/Destination';
 import MaldivesPackage from './components/Packages/maldivesAssetes/MaldivesPackage';
@@ -17,8 +16,8 @@ import USA from './components/Packages/USA/USA';
 import BookNow from './components/BookNow';
 import Packagebooking from './components/PackageBooking';
 import India from './components/Packages/India/India';
-import Carousel from './components/Carousel';
 import Banner from './components/Banner';
+import Successful from './components/Successful';
 
 
 
@@ -41,7 +40,6 @@ function App() {
      <Route path='/home'element={<Home/>}/>
      <Route path='/contact'element={<Contact/>}/>
      <Route path='/about'element={<About/>}/>
-     <Route path='/package'element={<Packages/>}/>
      <Route path='/booknow'element={<BookNow/>}/>
      <Route path='/booking'element={<Packagebooking/>}/>
 
@@ -51,7 +49,7 @@ function App() {
  <Route path='/switz'element={<Switzerland/>}/>
  <Route path='/usa'element={<USA/>}/>
  <Route path='/india'element={<India/>}/>
-
+ <Route path='/success'element={<Successful/>}/>
  <Route path='/ban'element={<Banner/>}/>
      </Routes>
      <Footer/> 
